@@ -1,0 +1,114 @@
+
+body {
+    background-color: yellow;
+    margin: 0;
+    padding:0;
+}
+
+@font-face {
+    font-family: 'universal';
+    src: url(../../fonts/Universal\ Serif.ttf);
+}
+
+@font-face {
+    font-family: 'AbstractGroovy';
+    src: url(../../fonts/aAbstractGroovy.otf);
+    src: url(../../fonts/aAbstractGroovy.ttf);
+}
+
+@font-face {
+    font-family: 'candy';
+    src: url(../../fonts/Candy\ Beans.otf);
+    
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url(../../fonts/Roboto-Bold.ttf);
+    
+}
+
+.etiqueta {
+    background-color: rgb(0, 209, 209);
+    text-align: center;
+    font-family: 'roboto', sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 120px;
+}
+
+.etiqueta_unit {    
+    text-align: left;
+    font-family: 'candy', sans-serif;
+    color:rgb(0, 209, 209);
+    padding: 5px;
+    margin-left: 15px ;
+    font-size: 24px;
+    width: 120px;
+}
+
+.item_audio {
+    margin: 5px 3px;
+}
+
+.pie_pagina {
+    margin: 10px 0 0 0;
+    padding: 0;
+    height: 50px;
+}
+
+.boton_unidad {
+    background-color: rgb(21, 29, 131);
+    color: antiquewhite;
+    margin: 10px 4px;
+    font-family: 'candy', serif;
+    font-size: 32px;
+    
+}
+
+.boton_unidad:hover {
+    background-color: darkorange;
+}
+
+.tab_panel {
+    
+    text-align: center;
+    background-color:rgb(199, 27, 0);
+}
+
+.contenido_unidad {
+    text-align: center;
+    background-color: rgb(0, 97, 21);
+}
+
+.cajones {
+    margin-top: 0;
+}
+
+#botones_tab {
+    margin: 3px 0;
+    padding: 0;
+}
+
+#franja_1 {
+   margin: 0px;
+}
+
+
+
+
+h1 {
+    color: aliceblue;
+}
+
+h6 {
+    color: blanchedalmond;
+}
+
+#medidas {
+    background-color:midnightblue;
+    color: beige;
+    width: 400px;
+    margin: 0;
+}

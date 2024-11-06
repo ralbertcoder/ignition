@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KINDER 6</title>
+    <link rel="stylesheet" href="../src/bootstrap.min.css">
+    <script src="../src/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="styles_k6.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="js/kinder6.js"></script>
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-primary" data-bs-theme="dark">
+        <div class="h-100">
+            <button id="homeTablet" class="btn"><img src="../images/house-door.svg" height="28px" width="28px" style="color: yellow;" ></button>
+            <button id="btn_menu_tablet" class="navbar-toggler tam" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menu-tablet" aria-controls="#navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div id="navbarNavDropdown" class="collapse navbar-collapse dropdown menu">
+                <button id="btn_menu" class="btn dropdown-toggle c-menu fs-1" type="button" id="dropdownMenu2"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    MENU
+                </button>
+                <ul id="menu-cascada" class="dropdown-menu" aria-labelledby="dropdownMenu2">                    
+                    <li><a class="dropdown-item fs-4" href="Audios/audiosk6.html" target="_blank">AUDIOS</a></li>
+                    <li><a class="dropdown-item fs-4" href="Videos/videosk6.html" target="_blank">VIDEOS</a></li>
+                    <li><a class="dropdown-item fs-4" href="../SPELLING BEE LOUNGE 4 KIDS/index.html" target="_blank">SPELLING BEE</a></li>
+
+                </ul>
+            </div>
+
+            <ul id="menu-tablet" class="dropdown-menu menu_tableta" aria-labelledby="dropdownMenu3">                
+                <li><a class="dropdown-item fs-4" href="Audios/audiosk6.html" target="_blank">AUDIOS</a></li>
+                <li><a class="dropdown-item fs-4" href="Videos/videosk6.html" target="_blank">VIDEOS</a></li>
+                <li><a class="dropdown-item fs-4" href="../SPELLING BEE LOUNGE 4 KIDS/index.html" target="_blank">SPELLING BEE</a></li>
+
+            </ul>
+
+            <p class="navbar-brand tam fs-2" href="#">KINDER 6</p>
+            <button id="home" class="btn">HOME</button>
+
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="image_platform">
+            <div class="c-item d-flex justify-content-center">
+                <h1 class="titulo">IGNITION</h1>
+                <img class="c-img" src="../images/kinder_6.jpeg" alt="Imagen de Portada">
+
+            </div>
+        </section>
+        <section class="overview">
+            <div class="h-80 w-100 d-flex align-items-center">
+                <div id="btn_container" class="row w-100 h-100">
+                    <button id="audios" class="btn fs-3">AUDIOS</button>
+                    <button id="videos" class="btn fs-3">VIDEOS</button>
+                    <button id="sp" class="btn fs-3">SPELLING BEE</button>
+
+                </div>
+            </div>
+            <div class="row h-20 w-100 d-flex align-items-center justify-content-center mt-3">
+                <!--  <button id="read_me" class="btn btn-info col-6 me-3 fs-3">READ ME</button> -->
+            </div>
+
+            <div id="nota_container" class="container w-100 d-flex align-items-center justify-content-center mt-4">
+                <p id="nota">
+
+                                             USO DE JUEGOS Y EL ALFABETO: 
+                    <br>
+                                    <b>(UNICAMENTE PARA SISTEMA OPERATIVO WINDOWS)</b>
+                    <br>
+                    Para poder usar los juegos y el alfabeto, es necesario instalar el Navegador BAIDU.
+                    <br>
+                    En el paquete se provee el programa instalador del Navegador BAIDU.
+                    <br>
+                    PARA INSTALAR: DAR CLICK AL BOTÓN DE ARRIBA "INSTALAR NAVEGADOR BAIDU".
+                    <br>
+                    Es necesario buscar el archivo : <br>
+                     <b>baidu-spark-browser.exe</b> dar Doble-click para instalar.
+                    <br>
+                    Establecerlo como predeterminado.
+                    <br>
+                    Luego, es necesario buscar el archivo <b>".exe"</b> en la carpeta correspondiente,
+                    <br>
+                    ya sea ALFABETO O JUEGOS, y dar Doble-click a ese archivo ".exe"
+                    para poder abrir el programa de Alfabeto o Juegos desde ahi.<br>                    
+                    <br>
+                    
+                 
+                    PARA TODAS LAS DEMAS FUNCIONES, AUDIO, VIDEO Y SPELLING BEE SE RECOMIENDA GOOGLE CHROME.
+                    <br>
+                    <br>
+                    PARA USAR LA PLATAFORMA CON GOOGLE CHROME:
+                    <br>
+                    1. ESTABLECER NUEVAMENTE COMO PREDETERMINADO Ó 
+                    <br>
+                    2. TAMBIEN SE PUEDE ABRIR CON CLICK-DERECHO Opcion "Abrir con",
+                    <br>
+                    (elegir Google Chrome).
+                    <br>
+                    <button id="btn_nota">CERRAR</button>
+                    <div id="div_baidu" class="explorar">
+                        <label for="baidu">INSTALAR NAVEGADOR BAIDU</label>
+                        <input id="baidu" name="alfabeto"
+                            class="baidu_apps" type="file" style="display: block;" accept=".exe">
+                    </div>
+                    <br>
+                   
+                </p>
+
+
+            </div>
+            <div id="baidu_btns">
+
+                <button id="read_me" class="btn col-5 me-3 fs-3">READ ME</button>
+                <br>
+                <div id="div_alfa" class="explorar">
+                    <label for="alfabeto">ALFABETO</label>
+                    <input id="alfabeto" name="alfabeto" class="baidu_apps"
+                        type="button" style="display: block;">
+                </div>
+                <div id="div_juegos" class="explorar">
+                    <label for="juegos">JUEGOS</label>
+                    <input id="juegos" name="juegos"
+                        class="baidu_apps" type="file" style="display: block;" accept=".exe">
+                   
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="nav-style" aria-current="page" href="#">Equipo Rama. All rights reserved</p>
+    </footer>
+
+</body>
+
+</html>

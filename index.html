@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/bootstrap.min.css">
+    <script src="src/bootstrap.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="venc/vencSemanal.js" ></script>
+    <script src="venc/vencimiento.js" ></script>
+    <script src="js/vigencia.js" ></script>
+    <script src="js/behavior.js"></script>
+   
+
+    <title>IGNITION</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-primary" data-bs-theme="dark">
+            <div class="h-100">
+
+                <button id="btn_menu_tablet" class="navbar-toggler tam" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menu-tablet" aria-controls="#navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div id="navbarNavDropdown" class="collapse navbar-collapse dropdown menu">
+                    <button id="btn_menu" class="btn dropdown-toggle c-menu" type="button" id="dropdownMenu2"
+                        data-bs-toggle="dropdown" data-bs-target="#menu-cascada" aria-expanded="false">
+                        MENU
+                    </button>
+                    <ul id="menu-cascada" class="ninguno">
+                        <li><a class="dropdown-item" href="AUTORUN LIBRETA - K4/index_k4.html" target="_blank">KINDER
+                                4</a></li>
+                        <li><a class="dropdown-item" href="AUTORUN LIBRETA - K5/index_k5.html" target="_blank">KINDER
+                                5</a></li>
+                        <li><a class="dropdown-item" href="AUTORUN LIBRETA K- 6/index_k6.html" target="_blank">KINDER
+                                6</a></li>
+                        <li><a class="dropdown-item" href="SPELLING BEE LOUNGE 4 KIDS/index.html"
+                                target="_blank">SPELLING BEE</a></li>
+
+                    </ul>
+                </div>
+
+                <ul id="menu-tablet" class="dropdown-menu menu_tableta" aria-labelledby="dropdownMenu3">
+                    <li><a class="dropdown-item" href="AUTORUN LIBRETA - K4/index_k4.html" target="_blank">KINDER 4</a>
+                    </li>
+                    <li><a class="dropdown-item" href="AUTORUN LIBRETA - K5/index_k5.html" target="_blank">KINDER 5</a>
+                    </li>
+                    <li><a class="dropdown-item" href="AUTORUN LIBRETA K- 6/index_k6.html" target="_blank">KINDER 6</a>
+                    </li>
+                    <li><a class="dropdown-item" href="SPELLING BEE LOUNGE 4 KIDS/index.html" target="_blank">SPELLING
+                            BEE</a></li>
+                </ul>
+
+                <p id="producto" class="" href="#">IGNITION</p>
+
+            </div>
+
+        </nav>
+
+    </header>
+    <main>
+
+       
+        <div class="portada_gral">
+            <img src="images/portada_kinder_2.jpg" alt="portada_general">
+        </div>
+
+        <div class="col franja_baja w-100">
+            <div class="cubierta d-flex justify-content-center">
+                <button id="k4" class="btn btn-success col botones_main">KINDER 4</button>
+                <button id="k5" class="btn btn-success col botones_main">KINDER 5</button>
+                <button id="k6" class="btn btn-success col botones_main">KINDER 6</button>
+            </div>
+            <br>
+
+            <div class="cubierta col-4 d-flex justify-content-center">
+                <button id="sp" class="btn btn-success col botones_main">SPELLING BEE</button>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p id="marca">EQUIPO RAMA. ALL RIGHTS RESERVED</p>
+    </footer>
+    <div id="vencimiento">
+        <p id="vence"></p>
+        <p id="browser"></p>
+    </div>
+
+</body>
+
+</html>
