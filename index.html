@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="src/bootstrap.min.css">
     <script src="src/bootstrap.min.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
-    
+
     <link rel="stylesheet" href="styles.css">
-    
-    <script src="venc/vencSemanal.js" ></script>
-    <script src="venc/vencimiento.js" ></script>
-    <script src="js/vigencia.js" ></script>
+    <link rel="stylesheet" href="styles/pinGeneral.css">
+
+    <script src="js/pinGeneral.js" ></script>
+    <script src="venc/vencSemanal.js"></script>
+    <script src="venc/vencimiento.js"></script>
+    <script src="js/vigencia.js"></script>
     <script src="js/behavior.js"></script>
-   
+
 
     <title>IGNITION</title>
 </head>
@@ -69,7 +71,7 @@
     </header>
     <main>
 
-       
+
         <div class="portada_gral">
             <img src="images/portada_kinder_2.jpg" alt="portada_general">
         </div>
@@ -95,6 +97,43 @@
         <p id="vence"></p>
         <p id="browser"></p>
     </div>
+
+    <div id="introScreen">
+        <div id="playContainer">
+            <label for="playImage">START</label>
+            <img id="playImage" name="playImage" src="images/google-play.svg" alt="PLAY">
+        </div>
+    </div>
+    <audio id="introSound" src="sounds/intro_ignition.mpeg" autoplay>Your browser does not support the
+        <code>audio</code> element.</audio>
+
+        <!-- PIN DE INGRESO -->
+
+    <div id="ingreso">
+        <form>
+            <p class="preguntas">
+                Ingresa la Informacion que se pide a continuacion:<br />
+                <br />
+                <br />
+                <label>A) Nombre Completo<input class="botones" type="text" name="data1"></label><br />
+                <label>B) Centro Escolar <input class="botones" type="text" name="data1"></label><br />
+                <label>C) Ciudad <input class="botones" type="text" name="data1"></label>
+                <label>C) Pais <input class="botones" type="text" name="data1"></label>
+            </p>
+        </form>
+        <div id="pin">
+            <p>Digita el PIN que recibiste en el mensaje SMS:</p>
+            <input class="digitos" id="digito1" type="text">
+            <input class="digitos" id="digito2" type="text">
+            <input class="digitos" id="digito3" type="text">
+            <input class="digitos" id="digito4" type="text">
+            <input class="digitos" id="digito5" type="text">
+            <input class="digitos" id="digito6" type="text">
+            <br />
+            <button id="ingresoBtn">INGRESAR</button>
+        </div>
+    </div>
+    <!-- FIN DE PIN DE INGRESO -->
 
 </body>
 

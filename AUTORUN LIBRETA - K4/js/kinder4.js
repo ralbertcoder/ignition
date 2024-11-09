@@ -1,7 +1,16 @@
 
 $(document).ready(function(){
 
+    browserDetector();
+
+    registraFecha();
+
     colapso(); // Calcula el tamaño de la pantalla y colapsa botones innecesarios
+
+    $("#playContainer").click(function () {
+        $("#introScreen").fadeOut(600);
+        $("#introSound").get(0).play();
+    });
 
     $('#audios').click(function(){
         const ruta = 'Audios/audiosk4.html';
@@ -41,57 +50,73 @@ $(document).ready(function(){
     });
 
 
+   // calculo de tamaño de pantalla, para hacerlo responsive
+    
+   function medidas_live() {
+    var alto = 0;
+    var ancho = 0;
 
-    // calculo de tamaño de pantalla, para hacerlo responsive
+        ancho = $(window).width();
+        alto = $(window).height();            
+        return ancho;    
+}
 
-    function medidas_live() {
-        var alto = 0;
-        var ancho = 0;
+function colapso(){
+    var ancho = medidas_live();
+    var altoTotal = $("body").height();
 
-            ancho = $(window).width();
-            alto = $(window).height();            
-            return ancho;    
+    if(ancho < 768) {
+        $('#read_me').css("display","none");
+        $('#div_alfa').css("display","none");
+        $('#div_juegos').css("display","none");
+        $('#homeTablet').css("display", "block");
+        $('#home').css("display", "none");
+        $('#playContainer label').css("font-size", "20px");
     }
 
-    function colapso(){
-        var ancho = medidas_live();
-        if(ancho < 768) {
+    $("#introScreen").css("height", altoTotal);
+}
+
+    $(window).resize(function(){
+        ancho = $(window).width();
+        alto = $(window).height();
+        var altoTotal = $("body").height();
+
+        $("#introScreen").css("height", altoTotal);
+        
+
+        if(ancho < 769) {
             $('#read_me').css("display","none");
             $('#div_alfa').css("display","none");
             $('#div_juegos').css("display","none");
-            $('#homeTablet').css("display", "block");
             $('#home').css("display", "none");
+            $('#homeTablet').css("display", "block");
+            $('#playContainer label').css("font-size", "20px");
+
+        } else if(ancho >768){
+            $('#read_me').css("display","block");
+            $('#div_alfa').css("display","block");
+            $('#div_juegos').css("display","block");
+            $('#homeTablet').css("display", "none");
+            $('#home').css("display", "block");
+            $('#playContainer label').css("font-size", "36px");
+
         }
-    }
- 
-        $(window).resize(function(){
-            ancho = $(window).width();
-            alto = $(window).height();
-            if(ancho < 769) {
-                $('#read_me').css("display","none");
-                $('#div_alfa').css("display","none");
-                $('#div_juegos').css("display","none");
-                $('#home').css("display", "none");
-                $('#homeTablet').css("display", "block");
-            } else if(ancho >768){
-                $('#read_me').css("display","block");
-                $('#div_alfa').css("display","block");
-                $('#div_juegos').css("display","block");
-                $('#homeTablet').css("display", "none");
-                $('#home').css("display", "block");
-            }
-          
-        })
+      
+    })
 
-        $('#home').click(function(){          
-            const ruta = '../index.html';
-            window.open(ruta);
-        });
+    $('#home').click(function(){          
+        const ruta = '../index.html';
+        window.open(ruta);
+    });
 
-        $('#homeTablet').click(function(){          
-            const ruta = '../index.html';
-            window.open(ruta);
-        });
+    $('#homeTablet').click(function(){          
+        const ruta = '../index.html';
+        window.open(ruta);
+    });
+
+
+       
 
 
    

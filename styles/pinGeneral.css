@@ -1,0 +1,55 @@
+/* ESTILOS DEL PIN GENERAL DE ENTRADA A LA PLATAFORMA*/
+
+#ingreso {
+    height:2000px;
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 10000;
+}
+
+#ingreso>form {
+    display: none;
+}
+
+#pin{
+    background-color: red;
+    color:white;    
+    display:relative;
+    width: 80%;
+    height:250px;
+    margin: 0 auto;
+    position:sticky;
+    top:150px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Century Gothic", "Arial","sans-serif";
+    text-align: center;
+
+}
+
+.digitos {
+    width: 10%;
+    height: 80px;
+    position:relative;
+    font-size: 56px;
+    font-weight: bold;
+    font-family: "Century Gothic", "Arial","sans-serif";
+    text-align: center;
+}
+
+#ingresoBtn {
+    width:150px;
+    height: 70px;
+    background-color: navy;
+    color:white;
+    position:relative;    
+    margin:20px auto;
+    font-size: 18px;
+    font-weight: normal;
+
+}

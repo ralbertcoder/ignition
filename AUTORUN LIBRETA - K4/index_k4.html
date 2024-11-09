@@ -10,6 +10,9 @@
 
     <link rel="stylesheet" href="styles_k4.css">
     <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../venc/vencSemanal.js"></script>
+    <script src="../venc/vencimiento.js"></script>
+    <script src="../js/vigencia.js"></script>
     <script src="js/kinder4.js"></script>
 
 
@@ -79,34 +82,51 @@
             </div>
 
             <div id="nota_container" class="container w-100 d-flex align-items-center justify-content-center mt-4">
-                <p id="nota">
+                <div id="nota">
 
-                    USO DE JUEGOS Y EL ALFABETO:
+                    USO DE JUEGOS:
                     <br>
                     <b>(UNICAMENTE PARA SISTEMA OPERATIVO WINDOWS)</b>
                     <br>
-                    Para poder usar los juegos y el alfabeto, es necesario instalar el Navegador BAIDU.
+                    Para poder usar los juegos, es necesario establecer el Navegador Google portable,
+                    como navegador predeterminado.
                     <br>
-                    En el paquete se provee el programa instalador del Navegador BAIDU.
+                    En el paquete se provee la carpeta que contiene la version portable de Google.
+                    <br>                    
                     <br>
-                    PARA INSTALAR: DAR CLICK AL BOTÓN DE ARRIBA "INSTALAR NAVEGADOR BAIDU".
-                    <br>
-                    Es necesario buscar el archivo : <br>
-                    <b>baidu-spark-browser.exe</b> dar Doble-click para instalar.
-                    <br>
-                    Establecerlo como predeterminado.
-                    <br>
-                    Luego, es necesario buscar el archivo <b>".exe"</b> en la carpeta correspondiente,
-                    <br>
-                    ya sea ALFABETO O JUEGOS, y dar Doble-click a ese archivo ".exe"
-                    para poder abrir el programa de Alfabeto o Juegos desde ahi.<br>
-                    <br>
+                    Para Establecerlo como predeterminado: <br>
+                <ol class="lista_nota">
+                    <li>Ir a configuracion de Windows</li>
+                    <li>Buscar Aplicaciones predeterminadas</li>
+                    <li>Pulsar en el Navegador que ya esta elegido.</li>
+                    <li>Elegir Google-portable <br>                                        
+                    (el cual es una version distinta de la version original de Google Chrome)</li>
+                </ol>
+                    UNA VEZ ESTABLECIDO Google Portable COMO NAVEGADOR PREDETERMINADO:
+                    <ul class="lista_nota">
+                        <li>Abrir la plataforma nuevamente con Google Chrome Portable</li>                        
+                        <li>Dar Click en el boton "JUEGOS" que se ve abajo de esta nota.</li>
+                        <li>Buscar la carpeta del Kinder que se estudiará, entrar a ella.</li>
+                        <li>Buscar el archivo ejecutable del Kinder correspondiente, Dar Click-derecho </li>
+                        <li>Abrir con...</li>
+                        <li>Elegir Google Chrome Portable</li>
+                        <li>Los archivos ejecutables de cada carpeta son : 
+                        <br>KINDER_4_JUEGOS,<br> KINDER_5_JUEGOS,<br>KINDER_6_JUEGOS </li>
 
-
-                    PARA TODAS LAS DEMAS FUNCIONES, AUDIO, VIDEO Y SPELLING BEE SE RECOMIENDA GOOGLE CHROME.
+                        <li>NOTA: Tambien es posible abrir los juegos examinando la carpeta de JUEGOS<br>
+                        directamente en el Explorador de Windows, Dar Click-derecho al ejecutable
+                        <li>Abrir con...</li>
+                        <li>Elegir Google Chrome Portable</li><br>
+                      los archivos ejecutables son los listados arriba. (KINDER_4_JUEGOS, ETC...)</li>
+                    </ul>
+                                                                  
                     <br>
                     <br>
-                    PARA USAR LA PLATAFORMA CON GOOGLE CHROME:
+                    PARA TODAS LAS DEMAS FUNCIONES, AUDIO, VIDEO Y SPELLING BEE SE RECOMIENDA GOOGLE CHROME<br>
+                    EN SU VERSION ORIGINAL.
+                    <br>
+                    <br>
+                    PARA USAR LA PLATAFORMA CON GOOGLE CHROME ORIGINAL:
                     <br>
                     1. ESTABLECER NUEVAMENTE COMO PREDETERMINADO Ó
                     <br>
@@ -114,17 +134,8 @@
                     <br>
                     (elegir Google Chrome).
                     <br>
-                    <button id="btn_nota">CERRAR</button>
-                <div id="div_baidu" class="explorar">
-                    <label for="baidu">INSTALAR NAVEGADOR BAIDU</label>
-                    <input id="baidu" name="alfabeto" class="baidu_apps" type="file" style="display: block;"
-                        accept=".exe">
+                    <button id="btn_nota">CERRAR</button>               
                 </div>
-                <br>
-
-                </p>
-
-
             </div>
             <div id="baidu_btns">
 
@@ -148,6 +159,23 @@
     <footer>
         <p class="nav-style" aria-current="page" href="#">Equipo Rama. All rights reserved</p>
     </footer>
+
+     <!--VENCIMIENTO-->
+     <div id="vencimiento">
+        <p id="vence"></p>
+        <p id="browser"></p>
+    </div>
+    <!--FIN VENCIMIENTO-->
+
+
+    <div id="introScreen">
+        <div id="playContainer">
+            <label for="playImage">START</label>
+            <img id="playImage" name="playImage" src="../images/google-play.svg" alt="PLAY" height="70px" width="60px">
+        </div>        
+   </div>
+        <audio id="introSound" src="../sounds/ignition_kinder_4.mpeg" autoplay>Your browser does not support the
+            <code>audio</code> element.</audio>
 
 </body>
 

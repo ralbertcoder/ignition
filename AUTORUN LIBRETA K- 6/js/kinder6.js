@@ -2,7 +2,16 @@
 
 $(document).ready(function(){
 
+    browserDetector();
+
+    registraFecha();
+
     colapso(); // Calcula el tamaño de la pantalla y colapsa botones innecesarios
+
+    $("#playContainer").click(function () {
+        $("#introScreen").fadeOut(600);
+        $("#introSound").get(0).play();
+    });
 
     $('#audios').click(function(){
         const ruta = 'Audios/audiosk6.html';
@@ -55,30 +64,44 @@ $(document).ready(function(){
 
     function colapso(){
         var ancho = medidas_live();
+        var altoTotal = $("body").height();
+
         if(ancho < 768) {
             $('#read_me').css("display","none");
             $('#div_alfa').css("display","none");
             $('#div_juegos').css("display","none");
             $('#homeTablet').css("display", "block");
             $('#home').css("display", "none");
+            $('#playContainer label').css("font-size", "20px");
         }
+
+        $("#introScreen").css("height", altoTotal);
     }
  
         $(window).resize(function(){
             ancho = $(window).width();
             alto = $(window).height();
+            var altoTotal = $("body").height();
+
+            $("#introScreen").css("height", altoTotal);
+            
+
             if(ancho < 769) {
                 $('#read_me').css("display","none");
                 $('#div_alfa').css("display","none");
                 $('#div_juegos').css("display","none");
                 $('#home').css("display", "none");
                 $('#homeTablet').css("display", "block");
+                $('#playContainer label').css("font-size", "20px");
+
             } else if(ancho >768){
                 $('#read_me').css("display","block");
                 $('#div_alfa').css("display","block");
                 $('#div_juegos').css("display","block");
                 $('#homeTablet').css("display", "none");
                 $('#home').css("display", "block");
+                $('#playContainer label').css("font-size", "36px");
+
             }
           
         })
@@ -94,6 +117,10 @@ $(document).ready(function(){
         });
    
 });
+
+// COPIADO DE behavior.js
+
+
 
 
 
