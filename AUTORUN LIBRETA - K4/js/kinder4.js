@@ -77,8 +77,8 @@ function colapso(){
     $("#introScreen").css("height", altoTotal);
 
     if(ancho < 576){
-        $("#sp").css("font-size", "16px");
-        $("#titlePlatform").css("font-size", "16px")
+        $("#sp").css("font-size", "18px");
+        $("#titlePlatform").css("font-size", "36px");
     }
 
 
@@ -116,8 +116,8 @@ function colapso(){
         }
 
         if(ancho < 576){
-            $("#sp").css("font-size", "16px");
-            $("#titlePlatform").css("font-size", "16px")
+            $("#sp").css("font-size", "18px");
+            $("#titlePlatform").css("font-size", "36px");
         }
 
       

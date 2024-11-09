@@ -138,6 +138,10 @@ nav {
    
 }
 
+#sp {
+    font-size: 24px;
+}
+
 .overview div div button {
     background-color: blue;
     color: antiquewhite;

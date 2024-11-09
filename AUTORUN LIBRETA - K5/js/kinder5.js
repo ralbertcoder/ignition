@@ -81,8 +81,9 @@ $(document).ready(function(){
         $("#introScreen").css("height", altoTotal);
 
         if(ancho < 576){
-            $("#sp").css("font-size", "16px");
-            $("#titlePlatform").css("font-size", "16px")
+           
+            $("#sp").css("font-size", "18px");
+            $("#titlePlatform").css("font-size", "36px");
         }
     }
     
@@ -116,8 +117,8 @@ $(document).ready(function(){
             }
 
             if(ancho < 576){
-                $("#sp").css("font-size", "16px");
-                $("#titlePlatform").css("font-size", "16px")
+                $("#sp").css("font-size", "18px");
+                $("#titlePlatform").css("font-size", "36px");
             }
           
         })
