@@ -79,7 +79,7 @@ $(document).ready(function(){
 
         if(ancho < 576){
             $("#sp").css("font-size", "16px");
-            $("#titlePlatform").css("font-size", "36px")
+            $("#titlePlatform").css("font-size", "16px")
         }
     }
  
