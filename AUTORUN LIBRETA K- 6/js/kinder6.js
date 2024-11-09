@@ -76,6 +76,11 @@ $(document).ready(function(){
         }
 
         $("#introScreen").css("height", altoTotal);
+
+        if(ancho < 576){
+            $("#sp").css("font-size", "16px");
+            $("#titlePlatform").css("font-size", "36px")
+        }
     }
  
         $(window).resize(function(){
@@ -101,7 +106,14 @@ $(document).ready(function(){
                 $('#homeTablet').css("display", "none");
                 $('#home').css("display", "block");
                 $('#playContainer label').css("font-size", "36px");
+                $("#sp").css("font-size", "");
+                $("#titlePlatform").css("font-size", "");
 
+            }
+
+            if(ancho < 576){
+                $("#sp").css("font-size", "16px");
+                $("#titlePlatform").css("font-size", "36px");
             }
           
         })
