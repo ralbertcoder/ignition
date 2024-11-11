@@ -80,10 +80,6 @@ function colapso(){
         $("#sp").css("font-size", "18px");
         $("#titlePlatform").css("font-size", "36px");
     }
-
-
-
-
 }
 
     $(window).resize(function(){
@@ -93,7 +89,6 @@ function colapso(){
 
         $("#introScreen").css("height", altoTotal);
         
-
         if(ancho < 769) {
             $('#read_me').css("display","none");
             $('#div_alfa').css("display","none");
@@ -111,19 +106,14 @@ function colapso(){
             $('#playContainer label').css("font-size", "36px");
             $("#sp").css("font-size", "");
             $("#titlePlatform").css("font-size", "");
-
-
         }
 
         if(ancho < 576){
             $("#sp").css("font-size", "18px");
             $("#titlePlatform").css("font-size", "36px");
         }
-
       
     })
-
-
 
 
     $('#home').click(function(){          

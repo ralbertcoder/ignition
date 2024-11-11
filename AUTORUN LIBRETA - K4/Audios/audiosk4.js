@@ -110,9 +110,7 @@ $(document).ready(function(){
 
         $(window).resize(function(){
             ancho = $(window).width();
-            alto = $(window).height();
-
-            $("#medidas").text(ancho + "x" + alto + " px");
+            alto = $(window).height();          
 
         })
     }

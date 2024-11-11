@@ -128,13 +128,8 @@ $(document).ready(function () {
 
         $(window).resize(function () {
             alto = $(window).width();
-            ancho = $(window).height();
-
-            $("#medidas").text(alto + "x" + ancho + " px");
-
+            ancho = $(window).height();        
         })
     }
-
-
 
 });
