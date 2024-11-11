@@ -1,8 +1,8 @@
 
 /// copia k4
 
-$(document).ready(function(){
-    
+$(document).ready(function () {
+
     browserDetector();
 
     registraFecha();
@@ -15,39 +15,39 @@ $(document).ready(function(){
     });
 
 
-    $('#audios').click(function(){
+    $('#audios').click(function () {
         const ruta = 'Audios/audiosk5.html';
-       window.open(ruta);   
+        window.open(ruta);
     });
 
-    $('#videos').click(function(){
+    $('#videos').click(function () {
         const ruta = 'Videos/videosk5.html';
-       window.open(ruta);            
+        window.open(ruta);
     });
 
-    $('#sp').click(function(){
+    $('#sp').click(function () {
         const ruta = '../SPELLING BEE LOUNGE 4 KIDS/index.html';
         window.open(ruta);
     });
 
 
-    $('#read_me').click(function(){
-        $('#nota').toggle();  
-        $('#div_baidu').toggle();     
-    });    
+    $('#read_me').click(function () {
+        $('#nota').toggle();
+        $('#div_baidu').toggle();
+    });
 
-    $('#btn_nota').click(function(){
+    $('#btn_nota').click(function () {
         $('#nota').fadeOut();
         $('#div_baidu').fadeOut();
 
     });
 
-    $('#btn_juegos').click(function(){
+    $('#btn_juegos').click(function () {
         $('#juegos').click();
-       
+
     });
 
-    $("#alfabeto").click(function(){
+    $("#alfabeto").click(function () {
         const ruta = '../IGNITION THE ALPHABET/index.html';
         window.open(ruta);
     });
@@ -55,86 +55,88 @@ $(document).ready(function(){
 
 
     // calculo de tamaño de pantalla, para hacerlo responsive
-    
+
     function medidas_live() {
         var alto = 0;
         var ancho = 0;
-    
-            ancho = $(window).width();
-            alto = $(window).height();            
-            return ancho;    
+
+        ancho = $(window).width();
+        alto = $(window).height();
+        return ancho;
     }
-    
-    function colapso(){
+
+    function colapso() {
         var ancho = medidas_live();
         var altoTotal = $("body").height();
-    
-        if(ancho < 768) {
-            $('#read_me').css("display","none");
-            $('#div_alfa').css("display","none");
-            $('#div_juegos').css("display","none");
+
+        if (ancho < 768) {
+            $('#read_me').css("display", "none");
+            $('#div_alfa').css("display", "block").css("font-size", "24px");
+            $('#div_juegos').css("display", "none");
             $('#homeTablet').css("display", "block");
             $('#home').css("display", "none");
             $('#playContainer label').css("font-size", "20px");
+
         }
-    
+
         $("#introScreen").css("height", altoTotal);
 
-        if(ancho < 576){
-           
+        if (ancho < 576) {
             $("#sp").css("font-size", "18px");
             $("#titlePlatform").css("font-size", "36px");
+            $('#div_alfa').css("display", "block").css("font-size", "20px");
+            $("#div_alfa label").css("margin-top", "15px");
         }
     }
-    
-        $(window).resize(function(){
-            ancho = $(window).width();
-            alto = $(window).height();
-            var altoTotal = $("body").height();
-    
-            $("#introScreen").css("height", altoTotal);
-            
-    
-            if(ancho < 769) {
-                $('#read_me').css("display","none");
-                $('#div_alfa').css("display","none");
-                $('#div_juegos').css("display","none");
-                $('#home').css("display", "none");
-                $('#homeTablet').css("display", "block");
-                $('#playContainer label').css("font-size", "20px");
-    
-            } else if(ancho >768){
-                $('#read_me').css("display","block");
-                $('#div_alfa').css("display","block");
-                $('#div_juegos').css("display","block");
-                $('#homeTablet').css("display", "none");
-                $('#home').css("display", "block");
-                $('#playContainer label').css("font-size", "36px");
-                $("#sp").css("font-size", "");
-                $("#titlePlatform").css("font-size", "");
 
-    
-            }
+    $(window).resize(function () {
+        ancho = $(window).width();
+        alto = $(window).height();
+        var altoTotal = $("body").height();
 
-            if(ancho < 576){
-                $("#sp").css("font-size", "18px");
-                $("#titlePlatform").css("font-size", "36px");
-            }
-          
-        })
-    
-        $('#home').click(function(){          
-            const ruta = '../index.html';
-            window.open(ruta);
-        });
-    
-        $('#homeTablet').click(function(){          
-            const ruta = '../index.html';
-            window.open(ruta);
-        });
-    
-    
-   
+        $("#introScreen").css("height", altoTotal);
+
+        if (ancho < 769) {
+            $('#read_me').css("display", "none");
+            $('#div_alfa').css("display", "block").css("font-size", "24px");
+            $('#div_juegos').css("display", "none");
+            $('#home').css("display", "none");
+            $('#homeTablet').css("display", "block");
+            $('#playContainer label').css("font-size", "20px");
+
+        } else if (ancho > 768) {
+            $('#read_me').css("display", "block");
+            $('#div_alfa').css("display", "block").css("font-size", "");
+            $('#div_juegos').css("display", "block");
+            $('#homeTablet').css("display", "none");
+            $('#home').css("display", "block");
+            $('#playContainer label').css("font-size", "36px");
+            $("#sp").css("font-size", "");
+            $("#titlePlatform").css("font-size", "");
+            $("#div_alfa label").css("margin-top", "");
+        }
+
+        if (ancho < 576) {
+            $("#sp").css("font-size", "18px");
+            $("#titlePlatform").css("font-size", "36px");
+            $('#div_alfa').css("display", "block").css("font-size", "20px");
+            $("#div_alfa label").css("margin-top", "15px");
+        }
+
+    })
+
+    $('#home').click(function () {
+        const ruta = '../index.html';
+        window.open(ruta);
+    });
+
+    $('#homeTablet').click(function () {
+        const ruta = '../index.html';
+        window.open(ruta);
+    });
+
+
+
 });
 
 

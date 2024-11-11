@@ -67,11 +67,12 @@ function colapso(){
 
     if(ancho < 768) {
         $('#read_me').css("display","none");
-        $('#div_alfa').css("display","none");
+        $('#div_alfa').css("display","block").css("font-size","24px");
         $('#div_juegos').css("display","none");
         $('#homeTablet').css("display", "block");
         $('#home').css("display", "none");
         $('#playContainer label').css("font-size", "20px");
+
     }
 
     $("#introScreen").css("height", altoTotal);
@@ -79,6 +80,8 @@ function colapso(){
     if(ancho < 576){
         $("#sp").css("font-size", "18px");
         $("#titlePlatform").css("font-size", "36px");
+        $('#div_alfa').css("display","block").css("font-size","20px");
+        $("#div_alfa label").css("margin-top","15px");
     }
 }
 
@@ -91,7 +94,7 @@ function colapso(){
         
         if(ancho < 769) {
             $('#read_me').css("display","none");
-            $('#div_alfa').css("display","none");
+            $('#div_alfa').css("display","block").css("font-size","24px");
             $('#div_juegos').css("display","none");
             $('#home').css("display", "none");
             $('#homeTablet').css("display", "block");
@@ -99,18 +102,21 @@ function colapso(){
 
         } else if(ancho >768){
             $('#read_me').css("display","block");
-            $('#div_alfa').css("display","block");
+            $('#div_alfa').css("display","block").css("font-size","");
             $('#div_juegos').css("display","block");
             $('#homeTablet').css("display", "none");
             $('#home').css("display", "block");
             $('#playContainer label').css("font-size", "36px");
             $("#sp").css("font-size", "");
             $("#titlePlatform").css("font-size", "");
+            $("#div_alfa label").css("margin-top","");
         }
 
         if(ancho < 576){
             $("#sp").css("font-size", "18px");
             $("#titlePlatform").css("font-size", "36px");
+            $('#div_alfa').css("display","block").css("font-size","20px");
+            $("#div_alfa label").css("margin-top","15px");
         }
       
     })
